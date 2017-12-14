@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{css}}" />
+		<title>Cipher</title>
+	</head>
+	<body>
+
+
+		<div>
+		<!-- Error message will start here -->
+		<h1>Cipher </h1>
+		<section id="selection">
+		<h2>Choose an encryption method:</h2>
+		<ul>
+		<li>
+			<label><input type="radio" name="cipher" value="caesar" onclick="document.location.href='/'" {{c_checked}}>Caesar</label>
+		</li>
+        	<li>
+			<label><input type="radio" name="cipher" value="vigenere" onclick="document.location.href='/vigenere'" {{v_checked}}>Vigenere</label>
+		</li>
+		</ul>
+		</section>		
+
+		<p>{{explanation}}</p>
+		    <form method="post">
+			    <label>{{instructions}}: <input type="text" name="encrypt" /></label>
+			    <textarea name="text">{{encrypted_message}}</textarea>
+			  <input type="submit" value="Encrypt" />
+		    </form>
+				    
+		</div>
+	</body>
+</html>

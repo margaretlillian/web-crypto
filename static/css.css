@@ -1,0 +1,101 @@
+body {
+	background: #f2f2f2;
+	color: #4d596b;
+	font: 1em arial;
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+h1{
+	font-weight: lighter;
+	font-size: 4em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 2px;
+	color: #23262b;
+}
+
+h2 {
+	/*text-align: center;*/
+	font-size: 1.3em;
+	font-weight: lighter;
+	padding: 5px;
+	margin: 0 0 0 20px;
+}
+
+div {
+	margin: auto 30%;
+	background: #fff;
+	border: 11px solid #4f545b;
+	border-radius: 40px;
+}
+
+p {
+	padding: 0 10px;
+}
+
+form{
+	margin: auto;
+	width: 89%;
+	padding: 10px;
+}
+
+textarea {
+	width: 99%;
+	height: 100px;
+	display:block;
+	margin: 10px 0;
+}
+
+input, textarea {
+	border: 2px solid #999;
+	border-radius: 10px;
+	font: 1.25em verdana;
+	color: #666;
+	background: #eee;	
+	padding: 5px;
+}
+
+ul {
+	margin: 0 auto 10px auto;
+	/*border-radius: 20px;*/
+	padding: 5px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	/*background: #ccc;*/
+	width: 90%;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	padding: 0 40px 0 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #666;
+	margin-left: 10px;
+}
+
+td {
+	border-right: 1px solid #666;
+	margin:-1px;
+	padding: 1px 4px;
+}
+
+tr{
+	margin:0;
+	padding: 0;
+}
+
+.center {
+	text-align: center;
+}
