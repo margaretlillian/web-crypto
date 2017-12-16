@@ -1,9 +1,15 @@
+{% extends "base.html" %}
+{% block selection %}<li>
+                <label><input type="radio" name="cipher" value="caesar" checked="checked">Caesar</label>
+        </li>
+                <li>
+                <label><input type="radio" name="cipher" value="vigenere" onclick="document.location.href='/vigenere'">Vigenere</label>
+        </li>
+{% endblock %}
+{% block explanation %}
 <p>With the Caesar Cipher, each letter is "shifted" x amount of times. For example, the word "thing" with a rotation of 2 becomes "vjkpi".
         Enter a message you want to encrypt and how many times to rotate the characters. </p>
-		<form method="post">
-	<label>Rotation amount: <input type="text" name="encrypt" /></label>
-	<textarea>      
-	</textarea>
-    <input type="submit" value="Encrypt" />
-</form>
+{% endblock %}
+{% block instructions %} Rotation amount{% endblock %}
+		
 		

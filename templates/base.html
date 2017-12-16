@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css.css')}}" />
+		<title>Cipher</title>
+	</head>
+	<body>
+
+
+		<div>
+		<h1>Cipher</h1>
+		<section id="selection">
+			<h2>Choose an encryption method:</h2>
+			<ul>
+					{% block selection %} {% endblock %}
+			</ul>
+			</section>		
+	
+			{% block explanation %}{% endblock %}
+				<form method="post">
+					<label>{% block instructions %}{% endblock %}: <input type="text" name="encrypt" /></label>
+					{% if error %}
+					<p class="error">{{error}}</p>
+					{% endif %}
+					<textarea name="text">{{encrypted_message}}</textarea>
+				  <input type="submit" value="Encrypt" />
+				</form>
+						
+		</div>
+	</body>
+</html>

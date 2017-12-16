@@ -85,13 +85,16 @@ table {
 	margin-left: 10px;
 }
 
-td {
+td {border-left:none;
+	border-bottom: none;
+	border-top: none;
 	border-right: 1px solid #666;
 	margin:-1px;
 	padding: 1px 4px;
 }
 
 tr{
+	border: none;
 	margin:0;
 	padding: 0;
 }
@@ -99,3 +102,10 @@ tr{
 .center {
 	text-align: center;
 }
+
+.key, .error {
+	font-weight: bold;
+}
+
+.error {color: #a44;
+font-size: 1.3em;}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block selection %}<li>
+        <label><input type="radio" name="cipher" value="caesar" onclick="document.location.href='/'">Caesar</label>
+</li>
+        <li>
+        <label><input type="radio" name="cipher" value="vigenere" checked="checked">Vigenere</label>
+</li>
+{% endblock %}
+{% block explanation %}
+<p>The Vigenere Cipher uses an 'encryption key' to rotate the letters in a message so many characters, starting with "a"
+    at 0 rotations, and ending with "z" at 25 rotations.  </p>
+<p>For example, the phrase "Florida swamp" with an encryption key of "gator" would give you "Llhfzja lkrsp". Here's how:</p>
+    <table>
+        <tr><td class="key">Phrase:</td><td>F</td> <td>l</td> <td>o</td> <td>r</td> <td>i</td> <td>d</td> <td>a</td> <td> </td>
+        <td>s</td> <td>w</td> <td>a</td> <td>m</td> <td>p</td></tr>
+        <tr><td class="key">Key:</td><td>g</td> <td>a</td> <td>t</td> <td>o</td> <td>r</td> <td>g</td> <td>a</td> <td>('skip') </td>
+        <td>t</td> <td>o</td> <td>r</td> <td>g</td> <td>a</td></tr>
+        <tr><td class="key">Rotation amount:</td><td>6</td> <td>0</td> <td>19</td> <td>14</td> <td>17</td> <td>6</td> <td>0</td> <td>('skip') </td>
+        <td>19</td> <td>14</td> <td>17</td> <td>6</td> <td>0</td></tr>
+        <tr><td class="key">Result:</td><td>L</td> <td>l</td> <td>h</td> <td>f</td> <td>z</td> <td>j</td> <td>a</td> <td> </td>
+        <td>l</td> <td>k</td> <td>r</td> <td>s</td> <td>p</td></tr>
+    </table>
+    {% endblock %}
+    {% block instructions %} Encryption key{% endblock %}    
